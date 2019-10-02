@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Tai sao phai them elment???? -->
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>TestLanThu4</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <!-- 
+     <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+     -->
+    
+  </welcome-file-list>
+  <!--
+  <servlet>
+  	<servlet-name>TestJava</servlet-name>
+  	<servlet-class>TestJava</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TestJava</servlet-name>
+  	<url-pattern>/check</url-pattern>
+  </servlet-mapping> 
+   -->
+   <!-- Định nghĩa servlet có tên TestJava, gắn với clas TestJAva -->
+  <servlet>
+  	<servlet-name>TestJava</servlet-name>
+  	<servlet-class>TestJava</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<servlet-class>WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>XuLyProfile</servlet-name>
+  	<servlet-class>XuLyProfile</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>logout</servlet-name>
+  	<servlet-class>logout</servlet-class>
+  </servlet>
+  <!-- Định nghĩa đường dẫn truy cập vào Servlet này -->
+  <servlet-mapping>
+  	<servlet-name>TestJava</servlet-name>
+  	<url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>WelcomeServlet</servlet-name>
+  	<url-pattern>/check2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>XuLyProfile</servlet-name>
+  	<url-pattern>/check3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>logout</servlet-name>
+  	<url-pattern>/check4</url-pattern>
+  </servlet-mapping>
+</web-app>
